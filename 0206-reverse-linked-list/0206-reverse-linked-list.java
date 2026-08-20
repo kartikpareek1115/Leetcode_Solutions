@@ -10,17 +10,30 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
+        //Brute Force
+        // ListNode temp = head;
+        // Stack<Integer> s = new Stack<Integer>();
+        // while(temp != null){
+        //     s.push(temp.val);
+        //     temp = temp.next;
+        // }
+        // temp = head;
+        // while(temp != null){
+        //     temp.val = s.pop();
+        //     temp = temp.next;
+        // }
+        // return head;
+
+        //optimal
         ListNode temp = head;
-        Stack<Integer> s = new Stack<Integer>();
+        ListNode prev = null;
+
         while(temp != null){
-            s.push(temp.val);
-            temp = temp.next;
+            ListNode front = temp.next;
+            temp.next = prev;
+            prev = temp;
+            temp = front;
         }
-        temp = head;
-        while(temp != null){
-            temp.val = s.pop();
-            temp = temp.next;
-        }
-        return head;
+        return prev;
     }
 }
