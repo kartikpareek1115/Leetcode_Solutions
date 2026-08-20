@@ -10,6 +10,9 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
+        if(head == null || head.next == null){
+            return head;
+        }
         //Brute Force
         // ListNode temp = head;
         // Stack<Integer> s = new Stack<Integer>();
@@ -25,15 +28,21 @@ class Solution {
         // return head;
 
         //optimal
-        ListNode temp = head;
-        ListNode prev = null;
+        // ListNode temp = head;
+        // ListNode prev = null;
+        // while(temp != null){
+        //     ListNode front = temp.next;
+        //     temp.next = prev;
+        //     prev = temp;
+        //     temp = front;
+        // }
+        // return prev;
 
-        while(temp != null){
-            ListNode front = temp.next;
-            temp.next = prev;
-            prev = temp;
-            temp = front;
-        }
-        return prev;
+        //recursive approach
+        ListNode  newHead = reverseList(head.next);
+        ListNode front = head.next;
+        front.next = head;
+        head.next = null;
+        return newHead; 
     }
 }
