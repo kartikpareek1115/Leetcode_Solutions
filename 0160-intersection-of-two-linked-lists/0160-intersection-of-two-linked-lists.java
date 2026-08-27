@@ -40,22 +40,41 @@ public class Solution {
         // return null;
 
         //Optmial _ 1
+        // ListNode temp1 = headA, temp2 = headB;
+        // int n1 = 0, n2  = 0;
+        // while(temp1 != null){
+        //     n1++;
+        //     temp1 = temp1.next;
+        // }
+        // while(temp2 != null){
+        //     n2++;
+        //     temp2 = temp2.next;
+        // }
 
-       
+        // if(n1<n2){
+        //     return collisionPoint(headA, headB, n2-n1);
+        // }
+        // else return collisionPoint(headB, headA, n1-n2);
+
+        //Optimal_2
         ListNode temp1 = headA, temp2 = headB;
-        int n1 = 0, n2  = 0;
-        while(temp1 != null){
-            n1++;
-            temp1 = temp1.next;
-        }
-        while(temp2 != null){
-            n2++;
-            temp2 = temp2.next;
-        }
-
-        if(n1<n2){
-            return collisionPoint(headA, headB, n2-n1);
-        }
-        else return collisionPoint(headB, headA, n1-n2);
+        while(temp1 != temp2){
+             if (temp1 == null) {
+        temp1 = headB;
+    } else {
+        temp1 = temp1.next;
     }
+
+    if (temp2 == null) {
+        temp2 = headA;
+    } else {
+        temp2 = temp2.next;
+    }
+        }
+        return temp1;
+    }
+
+
+    
+
 }
