@@ -65,4 +65,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0020-valid-parentheses) |
+## Array
+|  |
+| ------- |
+| [0414-third-maximum-number](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0414-third-maximum-number) |
+## Sorting
+|  |
+| ------- |
+| [0414-third-maximum-number](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0414-third-maximum-number) |
 <!---LeetCode Topics End-->
