@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0125-valid-palindrome](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0160-intersection-of-two-linked-lists) |
@@ -61,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0008-string-to-integer-atoi](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0008-string-to-integer-atoi) |
 | [0020-valid-parentheses](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0020-valid-parentheses) |
+| [0125-valid-palindrome](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0125-valid-palindrome) |
 | [0344-reverse-string](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0344-reverse-string) |
 ## Bracket Sequences
 |  |
