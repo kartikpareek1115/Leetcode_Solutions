@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0020-valid-parentheses) |
+| [0155-min-stack](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0155-min-stack) |
 | [0234-palindrome-linked-list](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0234-palindrome-linked-list) |
 ## Math
 |  |
@@ -98,4 +99,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->
