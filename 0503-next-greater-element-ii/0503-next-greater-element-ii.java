@@ -26,20 +26,34 @@ class Solution {
         // return nge;
 
         //Better
+        // int[] nge = new int[nums.length];
+        // int n = nums.length;
+        // for(int i = 0; i<n; i++){
+        //     nge[i] = -1;
+        //     for(int j = i+1; j< i+n; j++){
+        //         int index = j%n;
+        //         if(nums[index] > nums[i]){
+        //             nge[i] = nums[index];
+        //             break;
+        //         }
+        //     }
+        // }
+        // return nge;
+
+        //Optimal
         int[] nge = new int[nums.length];
         int n = nums.length;
-        for(int i = 0; i<n; i++){
-            nge[i] = -1;
-            for(int j = i+1; j< i+n; j++){
-                int index = j%n;
-                if(nums[index] > nums[i]){
-                    nge[i] = nums[index];
-                    break;
-                }
-            }
-        }
-        return nge;
+        java.util.Arrays.fill(nge,-1);
+        java.util.Deque<Integer> stack = new java.util.ArrayDeque<>();
 
-        
+        for(int i = 0; i< 2*n; i++){
+            int cur = nums[i%n];
+            while(!stack.isEmpty() && nums[stack.peek()] < cur){
+                nge[stack.pop()] = cur;
+            }
+            if(i < n) stack.push(i);
+        }
+
+        return  nge;
     }
 }
