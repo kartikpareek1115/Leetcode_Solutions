@@ -1,7 +1,7 @@
 class Solution {
     public int[] nextGreaterElements(int[] nums) {
 
-        //Brute-Force --> failing with -1 test case
+        //Brute-Force --> failing with -1 test case hence using the boolean
         int[] nge = new int[nums.length];
        
         for(int i = 0; i< nums.length; i++){
