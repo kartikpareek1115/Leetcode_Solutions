@@ -1,41 +1,88 @@
+import java.util.Stack;
+
 class Solution {
     public int sumSubarrayMins(int[] arr) {
 
-        // Brute Force -- TLE 
+        // Brute Force Approach -- TLE (Time Limit Exceeded)
         int modulo = 1_000_000_007;
         long sum = 0;
         int n = arr.length;
-        // for(int i = 0; i< arr.length; i++){
-        //     int min = arr[i];
-        //     for(int j = i ; j< arr.length; j++){
-        //         min = Math.min(min,arr[j]);
-        //         sum = (sum+min)%modulo;
-        //     }
-            
-        // }
-        // return sum;
 
+        /*
+        for (int i = 0; i < n; i++) {
+            int min = arr[i];
+
+            for (int j = i; j < n; j++) {
+
+                // Update the minimum for the current subarray
+                min = Math.min(min, arr[j]);
+
+                // Add the minimum of this subarray to sum
+                sum = (sum + min) % modulo;
+            }
+        }
+
+        return (int) sum;
+        */
+
+        // Optimized Approach: Monotonic Stack
         Stack<Integer> st = new Stack<>();
 
-        for(int i=0; i<=n; i++){
-            while(!st.isEmpty() && 
-                  (i == n|| arr[st.peek()] >= arr[i])){
+        // i visits every index, including n.
+        // i == n acts as a virtual boundary after the last element.
+        // It allows us to process any elements still remaining in the stack.
+        for (int i = 0; i <= n; i++) {
 
-                    int mid = st.pop();
-                    int left = st.isEmpty() ? -1 : st.peek();
-                    int right = i;
+            /*
+             * Pop while:
+             * 1. i == n: we have reached the end of the array, OR
+             * 2. The current value is <= the value at the stack's top index.
+             *
+             * When an index is popped, we calculate how many subarrays
+             * have arr[mid] as their minimum.
+             */
+            while (!st.isEmpty() &&
+                   (i == n || arr[st.peek()] >= arr[i])) {
 
-                    long leftCount = mid - left;
-                    long rightCount = right - mid;
+                // mid is the index of the element we're calculating for.
+                int mid = st.pop();
 
-                    sum = (sum+(long) arr[mid] * leftCount * rightCount) % modulo;
-                  }
+                // Find the previous smaller element's index.
+                // If the stack is empty, no such element exists,
+                // so use -1 as the left boundary.
+                int left = st.isEmpty() ? -1 : st.peek();
 
-                  if(i<n){
-                    st.push(i);
-                  }
-               
+                // i is the right boundary: the current element stopped
+                // arr[mid] from extending farther to the right.
+                // If i == n, the boundary is just past the array's end.
+                int right = i;
+
+                // Number of possible starting positions for subarrays
+                // that include mid and stay within its left boundary.
+                long leftCount = mid - left;
+
+                // Number of possible ending positions for subarrays
+                // that include mid and stay before its right boundary.
+                long rightCount = right - mid;
+
+                /*
+                 * Every combination of a valid start and end gives
+                 * one subarray whose minimum is arr[mid].
+                 *
+                 * Contribution = value * number of starts * number of ends
+                 */
+                sum = (sum + (long) arr[mid] * leftCount * rightCount)
+                      % modulo;
+            }
+
+            // Push the current index only if it is a real array index.
+            // Never access arr[n], because n is outside the array.
+            if (i < n) {
+                st.push(i);
+            }
         }
-           return (int) sum;
+
+        // Return the final sum of all subarray minimums.
+        return (int) sum;
     }
 }
