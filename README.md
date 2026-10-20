@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0503-next-greater-element-ii) |
 | [0901-online-stock-span](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0901-online-stock-span) |
 | [0907-sum-of-subarray-minimums](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0907-sum-of-subarray-minimums) |
+| [2104-sum-of-subarray-ranges](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/2104-sum-of-subarray-ranges) |
 ## Math
 |  |
 | ------- |
@@ -92,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0503-next-greater-element-ii) |
 | [0907-sum-of-subarray-minimums](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0907-sum-of-subarray-minimums) |
+| [2104-sum-of-subarray-ranges](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/2104-sum-of-subarray-ranges) |
 ## Sorting
 |  |
 | ------- |
@@ -121,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0503-next-greater-element-ii) |
 | [0901-online-stock-span](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0901-online-stock-span) |
 | [0907-sum-of-subarray-minimums](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0907-sum-of-subarray-minimums) |
+| [2104-sum-of-subarray-ranges](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/2104-sum-of-subarray-ranges) |
 ## Trie
 |  |
 | ------- |
