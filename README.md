@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0234-palindrome-linked-list) |
 | [0496-next-greater-element-i](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0503-next-greater-element-ii) |
+| [0735-asteroid-collision](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0735-asteroid-collision) |
 | [0901-online-stock-span](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0901-online-stock-span) |
 | [0907-sum-of-subarray-minimums](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [2104-sum-of-subarray-ranges](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/2104-sum-of-subarray-ranges) |
@@ -96,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0414-third-maximum-number](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0414-third-maximum-number) |
 | [0496-next-greater-element-i](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0503-next-greater-element-ii) |
+| [0735-asteroid-collision](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0735-asteroid-collision) |
 | [0907-sum-of-subarray-minimums](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [2104-sum-of-subarray-ranges](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/2104-sum-of-subarray-ranges) |
 ## Sorting
@@ -151,4 +153,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0085-maximal-rectangle](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0085-maximal-rectangle) |
+## Simulation
+|  |
+| ------- |
+| [0735-asteroid-collision](https://github.com/kartikpareek1115/Leetcode_Solutions/tree/master/0735-asteroid-collision) |
 <!---LeetCode Topics End-->
