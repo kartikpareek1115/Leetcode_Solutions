@@ -26,11 +26,12 @@ class Solution {
         result.reverse();
 
         int start = 0;
-
+        // Skip leading zeroes from the final number.
         while(start < result.length()
         && result.charAt(start) == '0'){
             start++;
         }
+        // No remaining digit represents zero.
         if(start == result.length()){
             return "0";
         }
